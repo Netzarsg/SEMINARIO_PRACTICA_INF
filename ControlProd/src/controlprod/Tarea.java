@@ -11,6 +11,7 @@ public class Tarea extends Entidad {
     private Date fechaCierre;
     private boolean completada;
     private String usuario;
+    private int ordenTrabajoId;
 
     public Tarea( int numeroOrden, String descripcion, Date fechaInicio, Date fechaCierre, boolean completada, String usuario) {
         super(); // Llama al constructor de Entidad para asignar un Id incremental
@@ -68,6 +69,14 @@ public class Tarea extends Entidad {
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
+    }
+
+    public int getOrdenTrabajoId() {
+        return ordenTrabajoId;
+    }
+
+    public void setOrdenTrabajoId(int ordenTrabajoId) {
+        this.ordenTrabajoId = ordenTrabajoId;
     }
     
     

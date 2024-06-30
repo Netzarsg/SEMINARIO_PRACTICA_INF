@@ -12,8 +12,6 @@ public abstract class Entidad {
     private static int idCounter = 1;
     protected int id;
     
-
-    
     public Entidad()
     {
         this.id=idCounter++;
@@ -22,11 +20,9 @@ public abstract class Entidad {
     public int getId() {
         return id;
     }
-
+    
     public void setId(int id) {
         this.id = id;
     }
-    
-    
     
 }
